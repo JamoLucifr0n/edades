@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+
+from lettuce import step,world
+from edades import Edades
+
+
+@step(u'dado que igreso la edad 0')
+def dado_que_igreso_la_edad_0(step):
+    world.edad = edades()
+
+@step(u'cuando consulto el mensaje')
+def cuando_consulto_el_mensaje(step):
+    mensaje = world.edad.mensaje(0)
+
+@step(u'entonces veo que no existes')
+def entonces_veo_que_no_existes(step):
+    assert world.mensaje == 'no existes' , 'mensaje esperado -no existes- y se obtubo' +wolrd.mensaje

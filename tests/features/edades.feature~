@@ -1,0 +1,9 @@
+Feature: Devuelve mensaje por edad dada.
+  Como usuario del sistema edades
+  quiero ingresar una edad y me regrese un mensaje segun mi edad
+  para tener siempre mis anios.
+
+  Scenario: Con edad menos a 0
+    Dado que ingreso la edad 0
+    cuando consulto mi mensaje
+    entonces veo no existes
