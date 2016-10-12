@@ -1,2 +1,5 @@
 # edades
-Tdd lettuce clase 
+Bdd lettuce clase 
+
+
+https://travis-ci.org/JamoLucifr0n/edades
